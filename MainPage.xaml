@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns:local="clr-namespace:DataBinding3716370" xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBinding3716370.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:Alumno/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Entry x:Name="NombreAlumno" Text="{Binding Nombre}" Placeholder="Ingrese su nombre"/>
+        <Label Text="{Binding MostrarNombre}"/>
+    </StackLayout>
+    
+</ContentPage>
+    
